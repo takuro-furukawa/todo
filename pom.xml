@@ -27,18 +27,18 @@
         <url>http://terasoluna.org</url>
     </organization>
 
-<!-- add from here -->
 <distributionManagement>
-   <repository>
-      <id>nexus-releases</id>
-      <url>http://nexus3-myproject.192.168.99.103.nip.io/repository/maven-releases/</url>
-   </repository>
-   <snapshotRepository>
-      <id>nexus-snapshots</id>
-      <url>http://nexus3-myproject.192.168.99.103.nip.io/repository/maven-snapshots/</url>
-   </snapshotRepository>
+  <repository>
+    <id>releases</id>
+    <!-- CHANGE HERE by your team nexus server -->
+    <url>http://nexus3-myproject.192.168.99.103.nip.io/repository/maven-releases/</url>
+  </repository>
+  <snapshotRepository>
+    <id>snapshots</id>
+    <!-- CHANGE HERE by your team nexus server -->
+    <url>http://nexus3-myproject.192.168.99.103.nip.io/repository/maven-snapshots/</url>
+  </snapshotRepository>
 </distributionManagement>
-<!-- to here -->
 
     <build>
         <pluginManagement>
